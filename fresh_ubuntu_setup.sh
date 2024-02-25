@@ -16,6 +16,9 @@ done
 
 ######## GPG keys and other install steps for various programs ########
 
+## Oh my Zsh ##
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 ## Sublime Text ##
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null;
 
@@ -33,6 +36,5 @@ sudo apt update
 sudo snap install sublime-text
 sudo apt install code
 
-## Oh my Zsh ##
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 
